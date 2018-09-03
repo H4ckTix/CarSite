@@ -1,0 +1,92 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    background-color: darkgrey;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu{
+    display: none;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav label{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: rgb(255, 255, 255);
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: rgb(145, 0, 0);
+    width: 270px;
+}
+
+.menu-motor:hover{
+    border-top: 5px solid rgb(104, 11, 11);
+    background-color: rgb(134, 81, 81);
+}
+
+.menu-exter:hover{
+    border-top: 5px solid rgb(104, 11, 11);
+    background-color: rgb(134, 81, 81);
+}
+
+.menu-inter:hover{
+    border-top: 5px solid rgb(104, 11, 11);
+    background-color: rgb(134, 81, 81);
+}
+
+.menu-contacts:hover{
+    border-top: 5px solid rgb(104, 11, 11);
+    background-color: rgb(134, 81, 81);
+}
