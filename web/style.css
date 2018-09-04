@@ -1,3 +1,16 @@
+html{
+    background-color: rgb(255, 255, 255);
+}
+
+.back{
+    background-image: url("images/mustang.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body{
     font-family: 'Orbitron', sans-serif;
     margin: 0px;
@@ -89,4 +102,57 @@ nav li:hover .submenu{
 .menu-contacts:hover{
     border-top: 5px solid rgb(104, 11, 11);
     background-color: rgb(134, 81, 81);
+}
+
+.submenu li:hover a{
+    color: firebrick;
+    font-weight: bold;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width: 780px){
+    .menu-mobile{
+        display: block;
+        color: white;
+        background-color: darkgray;
+        text-align: center;
+        padding: 12px 0px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+}
+
+.mVente{
+    text-align: center;
+}
+
+figure{
+    float: 30%;
+    width: 30%;
+    text-align: center;
+    text-indent: 0;
+}
+
+.Borla{
+    border: 3px solid darkgray;
+
 }
